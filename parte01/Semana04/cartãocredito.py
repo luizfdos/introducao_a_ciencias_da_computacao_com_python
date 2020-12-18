@@ -1,0 +1,10 @@
+meuCartão = int(input("Digite o número do seu cartão de crédito: "))
+
+cartãoLido = 1
+encontreiMeuCartãoNaLista = False
+while cartãoLido != 0 and not encontreiMeuCartãoNaLista:
+    cartãoLido = int(input("Digite o número do próximo cartão de crédito: "))
+    if cartãoLido == meuCartão:
+        encontreiMeuCartãoNaLista = True
+
+print("Eba!! Meu cartão está lá" if encontreiMeuCartãoNaLista else "Xii! Não encontrei meu cartão na lista")
